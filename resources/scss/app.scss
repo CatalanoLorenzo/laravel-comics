@@ -1,6 +1,103 @@
 @import '~bootstrap/scss/bootstrap';
-header{
-    .blue_nav{
+$bg-footer : #ffffff;
+$bg-contnent: #1c1c1c;
+$bg-bottomNav: #0282f9;
+$bg-footer: #303030;
+$text-header: #057dec;
+$color-logo: #1d85ed;
+$text-footer: #1961b3;
+$border-botton-footer: #1d5283;
+$bgIcon-footer: #797979;
+
+header {
+    .blue_nav {
         background-color: #0282f9;
+
+        a {
+            font-size: 0.5rem;
+        }
+
+        button {
+            font-size: 0.5rem;
+
+        }
+
+        ;
+    }
+
+    .searchbox {
+        svg {
+
+
+            height: 20px;
+            width: 20px;
+
+
+
+        }
+    }
+
+    .white_nav {
+        .navbar-brand {
+
+            a {
+                width: 81px;
+                height: 81px;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+
+                }
+            }
+
+            .menu {
+                a {
+                    padding-bottom: 45px;
+            padding-top: 48px;
+                }
+            }
+        }
+
+        .select {
+            border-bottom: 4px solid $text-header;
+            padding-bottom: 45px;
+            padding-top: 48px;
+        }
+        .searchbox{
+            div{
+                border-bottom: 2px solid $text-header;
+            }
+        }
+    }
+}
+
+footer {
+    .top {
+        background-color: $bg-bottomNav;
+
+        .shop {
+            img {
+                width: 55px;
+            }
+        }
+    }
+
+    .center {
+        background-image: url(/resources/img/dc-logo-bg.png), url(/resources/img/footer-bg.jpg);
+        background-position: 80%, center;
+        background-size: auto, cover;
+        background-repeat: no-repeat;
+    }
+
+    .bottom {
+        background-color: $bg-footer;
+
+        .followUS {
+            img {
+                height: 10px;
+                width: 10px;
+            }
+        }
     }
 }

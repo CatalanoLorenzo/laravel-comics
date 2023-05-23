@@ -13,7 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/Comics', function () {
     $voices= config('voice_navbar.voices');
-    return view('comics',compact('voices'));
-})->name('comics');
+    $about_nav = config('about_nav_menu.about_nav');
+    $footericon = config('footer_icon.foote_icon');
+    return view('Comics',compact('voices','about_nav','footericon'));
+})->name('Comics');
