@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row flex-column">
                 <!-- blue nav -->
-                <div class="col text-white justify-content-end d-flex">
+                <div class="col text-white justify-content-end d-flex blue_nav">
                     <ul>
                         <li class="nav-item py-1">
                             <a class="nav-link" aria-current="page" href="#">DC PoweroTM VISA®</a>
