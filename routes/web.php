@@ -17,5 +17,7 @@ Route::get('/Comics', function () {
     $voices= config('voice_navbar.voices');
     $about_nav = config('about_nav_menu.about_nav');
     $footericon = config('footer_icon.foote_icon');
-    return view('Comics',compact('voices','about_nav','footericon'));
+    $comics = config('comics.comics');
+    $shops = config('shop_menu.shop_menu');
+    return view('Comics',compact('voices','about_nav','footericon','comics','shops'));
 })->name('Comics');

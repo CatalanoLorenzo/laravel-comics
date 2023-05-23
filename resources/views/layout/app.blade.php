@@ -15,6 +15,9 @@
 <body>
   @include('partials.header')
   <main>
+    @yield('jumbo')
+    @yield('showcard')
+    @yield('menu_shop')
   </main>
   @include('partials.footer')
 
